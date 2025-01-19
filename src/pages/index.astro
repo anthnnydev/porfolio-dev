@@ -1,0 +1,48 @@
+---
+import SectionContainer from "../components/SectionContainer.astro";
+import Layout from "../layouts/Layout.astro";
+import TitleSection from "../components/TitleSection.astro";
+import Projects from "../components/Projects.astro";
+import CodeIcon from "../icons/Code.astro";
+import CertificateIcon from "../icons/Certificate.astro";
+import Hero from "../components/Hero.astro";
+import Certificates from "../components/Certificates.astro";
+import AboutMe from "../components/AboutMe.astro";
+import About from "../icons/About.astro";
+---
+
+<Layout
+  title="Porfolio de anthnnydev - Desarrollador y Programador Web"
+  description=""
+>
+  <main class="px-4">
+    <SectionContainer id="inicio" class="py-16 md:py-36">
+      <Hero />
+      <slot />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <TitleSection>
+        <CodeIcon class="size-7" />
+          Proyectos
+      </TitleSection>
+        <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="certificados" class="py-16 md:py-28">
+      <TitleSection>
+        <CertificateIcon class="size-7" />
+          Certificados
+      </TitleSection>
+        <Certificates />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <TitleSection>
+        <About class="size-7" />
+          Sobre Mí
+      </TitleSection>
+        <AboutMe />
+    </SectionContainer>
+  </main>
+</Layout>

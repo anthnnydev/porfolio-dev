@@ -1,0 +1,29 @@
+---
+const CERTIFICACIONES = [
+  {
+    title: "React y Typescript - Guía Completa",
+    description:
+      "Certificado de aprobación de 'React y Typescript - Guía Completa'.",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-101c8f0f-a816-415f-a9a3-7ad64555dec1.jpg?v=1710555848000",
+  },
+  
+];
+---
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {
+    CERTIFICACIONES.map(({ title, description, link }) => (
+      <article class="bg-gray-800/40 border border-slate-100/15 p-6 rounded-lg shadow-md space-y-4">
+        <h3 class="text-xl font-semibold">{title}</h3>
+        <p class="text-gray-400">{description}</p>
+        <a
+          href={link}
+          target="_blank"
+          class="text-yellow-400 hover:text-yellow-300 transition mt-4 block"
+        >
+          Ver Certificado →
+        </a>
+      </article>
+    ))
+  }
+</div>
