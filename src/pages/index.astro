@@ -9,6 +9,7 @@ import Hero from "../components/Hero.astro";
 import Certificates from "../components/Certificates.astro";
 import AboutMe from "../components/AboutMe.astro";
 import About from "../icons/About.astro";
+import Skills from "../components/Skills.astro";
 ---
 
 <Layout
@@ -35,6 +36,14 @@ import About from "../icons/About.astro";
           Certificados
       </TitleSection>
         <Certificates />
+    </SectionContainer>
+
+    <SectionContainer id="skills" class="py-16 md:py-28">
+      <TitleSection>
+        <About class="size-7" />
+          Skills
+      </TitleSection>
+        <Skills />
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">
